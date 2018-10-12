@@ -17,7 +17,6 @@ public class SensorsListActivity extends AppCompatActivity {
 
     SensorManager sensorManager;
     RecyclerView recyclerSensorView;
-    Button getSensorList;
     SensorsListAdapter recyclerAdapter;
     List<Sensor> sensorList;
 
@@ -26,7 +25,6 @@ public class SensorsListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sensors_list);
         recyclerSensorView = findViewById(R.id.recycler_view);
-        getSensorList = findViewById(R.id.get_sensors_list);
         sensorList = new ArrayList<>();
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
