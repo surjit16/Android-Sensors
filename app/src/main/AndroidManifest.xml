@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".AnotherActivity"/>
-        <activity android:name=".RotationActivity">
+        <activity android:name=".AnotherActivity" />
+        <activity android:name=".RotationActivity" />
+        <activity android:name=".ParentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SensorsListActivity" />
+        <activity android:name=".SensorDetailsActivity" />
+        <activity android:name=".CalculateSensorValueActivity"></activity>
     </application>
 
 </manifest>

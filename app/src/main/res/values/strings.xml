@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SensorsDemo</string>
+    <string name="sensor">Sensor :</string>
 </resources>

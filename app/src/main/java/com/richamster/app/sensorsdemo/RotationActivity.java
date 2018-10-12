@@ -125,7 +125,8 @@ public class RotationActivity extends AppCompatActivity implements SensorEventLi
             double azimuth = orientationValues[0] * dd;
             double pitch = orientationValues[1] * dd;
             double roll = orientationValues[2] * dd;
-            rotationManualValues.setText("[" + azimuth + ", " + pitch + ", " + roll + "]");
+            rotationManualValues.setText(Arrays.toString(orientationValues));
+            rotationManualValues.setText("in degree [" + azimuth + ", " + pitch + ", " + roll + "]");
         }
     }
 
